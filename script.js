@@ -1,6 +1,4 @@
-// ===== MOBILE NAVIGATION =====
-    // Purpose: Opens and closes the compact navigation menu on smaller screens.
-    const menuButton = document.getElementById('menuButton');
+const menuButton = document.getElementById('menuButton');
     const mobileMenu = document.getElementById('mobileMenu');
 
     function toggleMenu() {
@@ -17,9 +15,6 @@
       });
     });
 
-    // ===== CONTACT FORM FEEDBACK =====
-    // Purpose: Validates the inquiry and confirms capture in this standalone preview.
-    // Connect this form to the business's approved form endpoint before publication.
     document.getElementById('contactForm').addEventListener('submit', function(event) {
       event.preventDefault();
       const status = document.getElementById('formStatus');
@@ -29,10 +24,8 @@
         return;
       }
 
-      status.textContent = 'Thank you. Your inquiry details are ready to be submitted.';
+      status.textContent = 'Thanks — contact submission is not yet connected. Please email us directly once contact details are added.';
       status.classList.remove('hidden');
     });
 
-// ===== SCROLL REVEALS =====
-    // Purpose: Adds restrained entrance motion to supporting content.
-    AOS.init({ once: true, duration: 700, offset: 80 });
+AOS.init({ once: true, duration: 700, offset: 80 });
