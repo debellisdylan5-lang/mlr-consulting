@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- BASE:START (managed by Coding Agent — do not edit) -->
+<base href="/mlr-consulting/">
+<!-- BASE:END -->
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#0b1830">
+  
+  
+  
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+  
+
+<!-- SEO Meta Tags -->
+<title>MLR Consulting | Website Design, SEO &amp; AEO</title>
+<meta name="description" content="MLR Consulting provides website design, SEO, AEO, local search visibility, conversion optimization, analytics, and practical digital strategy for growing businesses." />
+<meta property="og:title" content="MLR Consulting | Website Design, SEO &amp; AEO" />
+<meta property="og:description" content="MLR Consulting provides website design, SEO, AEO, local search visibility, conversion optimization, analytics, and practical digital strategy for growing businesses." />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="MLR Consulting | Website Design, SEO &amp; AEO" />
+<meta name="twitter:description" content="MLR Consulting provides website design, SEO, AEO, local search visibility, conversion optimization, analytics, and practical digital strategy for growing businesses." />
+<!-- End SEO Meta Tags -->
+<script data-lp-token-hydrate>
+(function(){try{
+  var slug="lp-mtsmmbl1-9u29b";
+  var SITEK="";
+  var SK='lp_access_'+slug;
+  var map={access_token:'lp_pw_',allowlist_access_token:'lp_al_',pin_access_token:'lp_pin_',paywall_access_token:'lp_paid_'};
+  function siteTok(){try{return SITEK?localStorage.getItem(SITEK):null;}catch(e){return null;}}
+  var u=new URL(location.href);var found=null;var changed=false;
+  var PINP=true;
+  if(!PINP){try{localStorage.removeItem('lp_pin_'+slug);if(SITEK)localStorage.removeItem(SITEK);}catch(e){}}
+  Object.keys(map).forEach(function(p){var v=u.searchParams.get(p);if(v){found=v;try{if(PINP||p!=='pin_access_token'){localStorage.setItem(map[p]+slug,v);if(SITEK&&p==='pin_access_token')localStorage.setItem(SITEK,v);}}catch(e){}if(p==='pin_access_token'){try{sessionStorage.setItem('lp_fresh_'+slug,'1');}catch(e){}}u.searchParams.delete(p);changed=true;}});
+  if(found){try{sessionStorage.setItem(SK,found);}catch(e){}}
+  else{try{if(!sessionStorage.getItem(SK)){var t=localStorage.getItem('lp_pw_'+slug)||localStorage.getItem('lp_al_'+slug)||localStorage.getItem('lp_pin_'+slug)||localStorage.getItem('lp_paid_'+slug)||siteTok();if(t)sessionStorage.setItem(SK,t);}}catch(e){}}
+  if(changed){try{history.replaceState(null,'',u.toString());}catch(e){}}
+  function getTok(){try{return sessionStorage.getItem(SK)||localStorage.getItem('lp_pw_'+slug)||localStorage.getItem('lp_al_'+slug)||localStorage.getItem('lp_pin_'+slug)||localStorage.getItem('lp_paid_'+slug)||siteTok();}catch(e){return null;}}
+  function needsToken(url,method){if(!url)return false;var s=String(url);var m=(method||'GET').toUpperCase();var isSheetWrite=(m==='POST'||m==='PATCH'||m==='PUT'||m==='DELETE')&&/\/sheet-rows(\/|$|\?)/.test(s);var isSheetRead=/\/sheet-data(\/|$|\?)/.test(s);var isLlm=/\/api\/landing-pages\/public\/[^/]+\/(llm|llm-config)(\/|$|\?)/.test(s);return isSheetWrite||isSheetRead||isLlm;}
+  if(window.fetch){var _f=window.fetch;window.fetch=function(input,init){try{var url=typeof input==='string'?input:(input&&input.url)||'';var method=(init&&init.method)||(input&&input.method)||'GET';if(needsToken(url,method)){var tok=getTok();if(tok){init=init||{};var h=new Headers(init.headers||(typeof input!=='string'?input.headers:undefined)||{});if(!h.has('X-Landing-Page-Token'))h.set('X-Landing-Page-Token',tok);init.headers=h;}}}catch(e){}return _f.call(this,input,init);};}
+  if(window.XMLHttpRequest){var _o=XMLHttpRequest.prototype.open;var _s=XMLHttpRequest.prototype.send;XMLHttpRequest.prototype.open=function(m,u){this.__lpM=m;this.__lpU=u;return _o.apply(this,arguments);};XMLHttpRequest.prototype.send=function(){try{if(needsToken(this.__lpU,this.__lpM)){var tok=getTok();if(tok)this.setRequestHeader('X-Landing-Page-Token',tok);}}catch(e){}return _s.apply(this,arguments);};}
+}catch(e){}})();
+</script>
+
+<script data-field-replace>
+(function(){
+  var params=new URLSearchParams(window.location.search);
+  var fields={};
+  var paramMap={
+    'first_name':'firstName','last_name':'lastName','full_name':'fullName',
+    'email':'email','phone':'phone','company':'company',
+    'city':'city','state':'state','country':'country'
+  };
+  var skipTags={'SCRIPT':1,'STYLE':1,'NOSCRIPT':1,'TEXTAREA':1,'CODE':1,'PRE':1};
+  var hasUrlFields=false;
+  for(var p in paramMap){
+    var v=params.get(p);
+    if(v){fields[paramMap[p]]=v;hasUrlFields=true;}
+  }
+  var contactId=params.get('contact_id');
+  function esc(s){
+    if(!s)return s;
+    var d=document.createElement('div');
+    d.appendChild(document.createTextNode(s));
+    return d.innerHTML;
+  }
+  function doReplace(data){
+    var r={};
+    r['{{full_name}}']=esc(((data.firstName||'')+' '+(data.lastName||'')).trim()||((data.fullName||data.name)||''));
+    r['{{first_name}}']=esc(data.firstName||(data.name?data.name.split(' ')[0]:'')||'');
+    r['{{last_name}}']=esc(data.lastName||(data.name&&data.name.indexOf(' ')>-1?data.name.substring(data.name.indexOf(' ')+1):'')||'');
+    r['{{email}}']=esc(data.email||'');
+    r['{{phone}}']=esc(data.phone||'');
+    r['{{company}}']=esc(data.company||'');
+    r['{{city}}']=esc(data.city||'');
+    r['{{state}}']=esc(data.state||'');
+    r['{{country}}']=esc(data.country||'');
+    r['{{date}}']=new Date().toLocaleDateString();
+    r['{{time}}']=new Date().toLocaleTimeString();
+    r['{{location}}']=[data.city,data.state,data.country].filter(Boolean).join(', ');
+    r['{{tracking_id}}']=esc(data.trackingId||'');
+    r['{{lastClickedProduct}}']=esc(data.lastClickedProduct||'');
+    r['{{lastProductClickDate}}']=esc(data.lastProductClickDate||'');
+    r['{{lastClickedProductPrice}}']=esc(data.lastClickedProductPrice||'');
+    r['{{lastClickedProductURL}}']=esc(data.lastClickedProductURL||'');
+    r['{{productsClickedCount}}']=esc(data.productsClickedCount||'0');
+    r['{{ip_address}}']=esc(data.ipAddress||'');
+    r['{{ip}}']=esc(data.ipAddress||'');
+    if(data.customFields){
+      for(var k in data.customFields){
+        r['{{'+k+'}}']=esc(String(data.customFields[k]||''));
+      }
+    }
+    params.forEach(function(v,k){
+      if(!paramMap[k]&&k!=='contact_id'&&k!=='page_id'&&k.indexOf('utm_')!==0){
+        r['{{'+k+'}}']=esc(v);
+      }
+    });
+    var hasValues=false;
+    for(var key in r){if(r[key]){hasValues=true;break;}}
+    if(!hasValues)return;
+    var walker=document.createTreeWalker(document.body,NodeFilter.SHOW_TEXT,{
+      acceptNode:function(n){
+        var p=n.parentNode;
+        if(p&&skipTags[p.nodeName])return NodeFilter.FILTER_REJECT;
+        return NodeFilter.FILTER_ACCEPT;
+      }
+    });
+    var node;
+    while(node=walker.nextNode()){
+      var txt=node.nodeValue;
+      if(txt&&txt.indexOf('{{')>-1){
+        var changed=txt;
+        for(var ph in r){
+          if(r[ph]&&changed.indexOf(ph)>-1){
+            changed=changed.split(ph).join(r[ph]);
+          }
+        }
+        if(changed!==txt)node.nodeValue=changed;
+      }
+    }
+    var attrs=['value','placeholder','content','alt','title'];
+    attrs.forEach(function(attr){
+      var els=document.querySelectorAll('['+attr+'*="{{"]');
+      for(var i=0;i<els.length;i++){
+        var tag=els[i].tagName;
+        if(skipTags[tag])continue;
+        var val=els[i].getAttribute(attr);
+        if(val){
+          var nv=val;
+          for(var ph in r){
+            if(r[ph]&&nv.indexOf(ph)>-1){
+              nv=nv.split(ph).join(r[ph]);
+            }
+          }
+          if(nv!==val)els[i].setAttribute(attr,nv);
+        }
+      }
+    });
+  }
+  function run(){
+    if(contactId){
+      var xhr=new XMLHttpRequest();
+      xhr.open('GET','https://paymegpt.com/api/landing/context/'+encodeURIComponent(contactId)+'?page_id=6945');
+      xhr.onload=function(){
+        if(xhr.status===200){
+          try{
+            var resp=JSON.parse(xhr.responseText);
+            if(resp.success&&resp.contact){
+              var merged=resp.contact;
+              for(var k in fields){merged[k]=fields[k];}
+              doReplace(merged);
+              return;
+            }
+          }catch(e){}
+        }
+        if(hasUrlFields)doReplace(fields);
+      };
+      xhr.onerror=function(){if(hasUrlFields)doReplace(fields);};
+      xhr.send();
+    }else if(hasUrlFields){
+      doReplace(fields);
+    }
+  }
+  if(document.readyState==='loading'){document.addEventListener('DOMContentLoaded',run);}
+  else{run();}
+})();
+</script>
+<script data-payment>
+(function(){
+  var slug='s8KrA6eu6';
+  var apiBase='https://paymegpt.com';
+  var successSubtext='';var successBtnLabel='Continue';var successBtnColor='#16a34a';var successRedirect='';
+  function findEmail(){
+    var ids=['email','emailAddress','buyer-email','buyerEmail','user-email','userEmail','checkout-email','customer-email','contact-email'];
+    for(var i=0;i<ids.length;i++){var el=document.getElementById(ids[i]);if(el&&el.value&&el.value.includes('@'))return el.value.trim();}
+    var inputs=document.querySelectorAll('input[type="email"],input[name*="email"],input[placeholder*="email"],input[placeholder*="Email"]');
+    for(var j=0;j<inputs.length;j++){if(inputs[j].value&&inputs[j].value.includes('@'))return inputs[j].value.trim();}
+    return '';
+  }
+  function findName(){
+    var ids=['name','fullName','full-name','buyer-name','buyerName','customer-name','userName','user-name'];
+    for(var i=0;i<ids.length;i++){var el=document.getElementById(ids[i]);if(el&&el.value)return el.value.trim();}
+    var inputs=document.querySelectorAll('input[name*="name"]:not([name*="email"]):not([type="email"]),input[placeholder*="name"]:not([placeholder*="email"]):not([type="email"]),input[placeholder*="Name"]:not([type="email"])');
+    for(var j=0;j<inputs.length;j++){if(inputs[j].value)return inputs[j].value.trim();}
+    return '';
+  }
+  function findPhone(){var ids=['phone','phoneNumber','phone-number','tel','telephone','mobile','mobileNumber','cell','contact-phone','buyer-phone'];for(var i=0;i<ids.length;i++){var el=document.getElementById(ids[i]);if(el&&el.value&&el.value.trim())return el.value.trim();}var inputs=document.querySelectorAll('input[type="tel"],input[name*="phone"],input[name*="tel"],input[name*="mobile"],input[placeholder*="phone"],input[placeholder*="Phone"]');for(var j=0;j<inputs.length;j++){if(inputs[j].value&&inputs[j].value.trim())return inputs[j].value.trim();}return '';}
+  var __realProcessPayment=function(a,b,c,d,e){
+    var amountCents,email,productName,productDescription,customerName,quantity;
+    if(a&&typeof a==='object'){
+      amountCents=a.amountCents;email=a.email;productName=a.productName;
+      productDescription=a.productDescription||'';customerName=a.name||'';quantity=a.quantity||1;
+    }else{
+      amountCents=typeof a==='number'?a:0;productName=typeof b==='string'?b:'';
+      productDescription=typeof c==='string'?c:'';email='';customerName='';quantity=1;
+    }
+    if(!email)email=findEmail();
+    if(!customerName)customerName=findName();
+    var phone=findPhone();
+    if(!productName){alert('Product name is required.');return Promise.reject('no_product_name');}
+    if(!amountCents||amountCents<100){alert('Amount must be at least $1.00');return Promise.reject('invalid_amount');}
+    if(!email){alert('Please enter your email address.');return Promise.reject('no_email');}
+    var successBase=window.location.href.split('?')[0];
+    var __pLoc=(document.documentElement.lang||navigator.language||'en');
+    return fetch(apiBase+'/api/landing-pages/public/'+slug+'/payment/checkout',{
+      method:'POST',headers:{'Content-Type':'application/json'},
+      body:JSON.stringify({email:email,name:customerName,phone:phone||'',amountCents:amountCents,productName:productName,productDescription:productDescription,quantity:quantity,locale:__pLoc,successUrl:successBase+'?payment=success&product='+encodeURIComponent(productName)+'&session_id={CHECKOUT_SESSION_ID}',cancelUrl:successBase+'?payment=cancelled'})
+    }).then(function(r){return r.json();}).then(function(d){
+      if(d.checkoutUrl){window.location.href=d.checkoutUrl;}
+      else{alert(d.error||'Failed to process payment');throw new Error(d.error);}
+    });
+  };
+  Object.defineProperty(window,'__processPayment',{value:__realProcessPayment,writable:false,configurable:false});
+  document.addEventListener('DOMContentLoaded',function(){
+    var urlParams=new URLSearchParams(window.location.search);
+    if(urlParams.get('payment')==='success'){
+      var sidP=urlParams.get('session_id');
+      if(sidP){try{fetch(apiBase+'/api/landing-pages/public/'+slug+'/checkout/confirm',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({sessionId:sidP})}).catch(function(){});}catch(e){}}
+      var pName=urlParams.get('product')||'your item';
+      var overlay=document.createElement('div');overlay.id='payment-success-overlay';
+      overlay.style.cssText='position:fixed;top:0;left:0;right:0;bottom:0;background:rgba(0,0,0,0.5);display:flex;align-items:center;justify-content:center;z-index:999999;font-family:system-ui,-apple-system,sans-serif;';
+      function esc(s){return String(s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');}
+      var subTxt=successSubtext||('Thank you for purchasing '+pName+'.');
+      overlay.innerHTML='<div style="background:white;border-radius:16px;padding:40px;max-width:420px;width:90%;text-align:center;box-shadow:0 20px 60px rgba(0,0,0,0.15);"><div style="width:64px;height:64px;border-radius:50%;background:#dcfce7;margin:0 auto 20px;display:flex;align-items:center;justify-content:center;"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#16a34a" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg></div><h2 style="margin:0 0 12px;font-size:24px;font-weight:700;color:#111827;">Payment Successful!</h2><p style="margin:0 0 24px;color:#6b7280;font-size:16px;">'+esc(subTxt)+'</p><button id="lp-pay-success-btn" style="padding:12px 32px;font-size:16px;font-weight:600;background:'+successBtnColor+';color:white;border:none;border-radius:8px;cursor:pointer;">'+esc(successBtnLabel)+'</button></div>';
+      document.body.appendChild(overlay);
+      var pBtn=document.getElementById('lp-pay-success-btn');
+      if(pBtn){pBtn.addEventListener('click',function(){if(successRedirect){window.location.href=successRedirect;}else{overlay.remove();window.history.replaceState({},'',window.location.pathname);}});}
+    }
+  });
+})();
+</script>
+<script data-cart>
+(function(){
+  var slug='s8KrA6eu6';
+  var apiBase='https://paymegpt.com';
+  var successSubtext='';var successBtnLabel='Continue';var successBtnColor='#16a34a';var successRedirect='';
+  function findCartEmail(){
+    var ids=['email','emailAddress','buyer-email','buyerEmail','user-email','userEmail','checkout-email','customer-email','contact-email'];
+    for(var i=0;i<ids.length;i++){var el=document.getElementById(ids[i]);if(el&&el.value&&el.value.includes('@'))return el.value.trim();}
+    var inputs=document.querySelectorAll('input[type="email"],input[name*="email"],input[placeholder*="email"],input[placeholder*="Email"]');
+    for(var j=0;j<inputs.length;j++){if(inputs[j].value&&inputs[j].value.includes('@'))return inputs[j].value.trim();}
+    return '';
+  }
+  function findCartName(){
+    var ids=['name','fullName','full-name','buyer-name','buyerName','customer-name','userName','user-name'];
+    for(var i=0;i<ids.length;i++){var el=document.getElementById(ids[i]);if(el&&el.value)return el.value.trim();}
+    var inputs=document.querySelectorAll('input[name*="name"]:not([name*="email"]):not([type="email"]),input[placeholder*="name"]:not([placeholder*="email"]):not([type="email"]),input[placeholder*="Name"]:not([type="email"])');
+    for(var j=0;j<inputs.length;j++){if(inputs[j].value)return inputs[j].value.trim();}
+    return '';
+  }
+  function findCartPhone(){var ids=['phone','phoneNumber','phone-number','tel','telephone','mobile','mobileNumber','cell','contact-phone','buyer-phone'];for(var i=0;i<ids.length;i++){var el=document.getElementById(ids[i]);if(el&&el.value&&el.value.trim())return el.value.trim();}var inputs=document.querySelectorAll('input[type="tel"],input[name*="phone"],input[name*="tel"],input[name*="mobile"],input[placeholder*="phone"],input[placeholder*="Phone"]');for(var j=0;j<inputs.length;j++){if(inputs[j].value&&inputs[j].value.trim())return inputs[j].value.trim();}return '';}
+  var __realCart=function(arg){
+    var items, email='', customerName='', successUrl, cancelUrl, currency;
+    if(Array.isArray(arg)){items=arg;}
+    else if(arg&&typeof arg==='object'){
+      items=arg.items;email=arg.email||'';customerName=arg.name||arg.customerName||'';
+      successUrl=arg.successUrl;cancelUrl=arg.cancelUrl;currency=arg.currency;
+    }
+    if(!Array.isArray(items)||items.length===0){alert('No items in cart.');return Promise.reject('no_items');}
+    var cleanItems=[];var totalCents=0;
+    for(var i=0;i<items.length;i++){
+      var it=items[i];if(!it||typeof it!=='object'){alert('Invalid item at position '+i);return Promise.reject('bad_item');}
+      var nm=typeof it.name==='string'?it.name.trim():'';
+      if(!nm){alert('Item '+(i+1)+' is missing a name.');return Promise.reject('no_name');}
+      var amt=typeof it.amountCents==='number'?it.amountCents:(typeof it.amount==='number'?Math.round(it.amount*100):NaN);
+      if(!isFinite(amt)||amt<1){alert('Item "'+nm+'" needs a valid amount in cents.');return Promise.reject('bad_amount');}
+      var qty=(typeof it.quantity==='number'&&it.quantity>0)?Math.floor(it.quantity):1;
+      cleanItems.push({name:nm,description:it.description||'',amountCents:amt,quantity:qty});
+      totalCents+=amt*qty;
+    }
+    if(totalCents<50){alert('Cart total must be at least $0.50');return Promise.reject('total_too_low');}
+    if(!email)email=findCartEmail();
+    if(!customerName)customerName=findCartName();
+    var cartPhone=findCartPhone();
+    if(!email){var p=window.prompt('Enter your email for the receipt:','');if(p&&p.indexOf('@')>-1){email=p.trim();}else{alert('An email address is required to complete checkout.');return Promise.reject('no_email');}}
+    var successBase=window.location.href.split('?')[0];
+    var body={email:email,name:customerName,items:cleanItems,locale:(document.documentElement.lang||navigator.language||'en')};
+    if(currency)body.currency=currency;
+    if(cartPhone)body.phone=cartPhone;
+    body.successUrl=successUrl||(successBase+'?cart=success&email='+encodeURIComponent(email)+'&session_id={CHECKOUT_SESSION_ID}');
+    body.cancelUrl=cancelUrl||(successBase+'?cart=cancelled');
+    return fetch(apiBase+'/api/landing-pages/public/'+slug+'/cart/checkout',{
+      method:'POST',headers:{'Content-Type':'application/json'},
+      body:JSON.stringify(body)
+    }).then(function(r){return r.json();}).then(function(d){
+      if(d.checkoutUrl){window.location.href=d.checkoutUrl;}
+      else{alert(d.error||'Failed to process checkout');throw new Error(d.error);}
+    });
+  };
+  try{Object.defineProperty(window,'__processCart',{value:__realCart,writable:false,configurable:false});}catch(e){window.__processCart=__realCart;}
+  document.addEventListener('DOMContentLoaded',function(){
+    var urlParams=new URLSearchParams(window.location.search);
+    if(urlParams.get('cart')==='success'){
+      var sidC=urlParams.get('session_id');
+      if(sidC){try{fetch(apiBase+'/api/landing-pages/public/'+slug+'/checkout/confirm',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({sessionId:sidC})}).catch(function(){});}catch(e){}}
+      if(document.getElementById('payment-success-overlay')||document.getElementById('donation-success-overlay')||document.getElementById('cart-success-overlay'))return;
+      var overlay=document.createElement('div');overlay.id='cart-success-overlay';
+      overlay.style.cssText='position:fixed;top:0;left:0;right:0;bottom:0;background:rgba(0,0,0,0.5);display:flex;align-items:center;justify-content:center;z-index:999999;font-family:system-ui,-apple-system,sans-serif;';
+      function esc(s){return String(s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');}
+      var subTxt=successSubtext||'Thank you for your order.';
+      overlay.innerHTML='<div style="background:white;border-radius:16px;padding:40px;max-width:420px;width:90%;text-align:center;box-shadow:0 20px 60px rgba(0,0,0,0.15);"><div style="width:64px;height:64px;border-radius:50%;background:#dcfce7;margin:0 auto 20px;display:flex;align-items:center;justify-content:center;"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#16a34a" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg></div><h2 style="margin:0 0 12px;font-size:24px;font-weight:700;color:#111827;">Order Confirmed!</h2><p style="margin:0 0 24px;color:#6b7280;font-size:16px;">'+esc(subTxt)+'</p><button id="lp-cart-success-btn" style="padding:12px 32px;font-size:16px;font-weight:600;background:'+successBtnColor+';color:white;border:none;border-radius:8px;cursor:pointer;">'+esc(successBtnLabel)+'</button></div>';
+      document.body.appendChild(overlay);
+      var cBtn=document.getElementById('lp-cart-success-btn');
+      if(cBtn){cBtn.addEventListener('click',function(){if(successRedirect){window.location.href=successRedirect;}else{overlay.remove();window.history.replaceState({},'',window.location.pathname);}});}
+    }
+  });
+})();
+</script>  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="overflow-x-hidden antialiased">
+
+  <!-- ============================================================================ -->
+  <!-- NAVBAR: Brand identity and same-page navigation                               -->
+  <!-- ============================================================================ -->
+  <nav data-section="navbar" class="sticky top-0 z-50 border-b border-slate-200/80 bg-white/90 backdrop-blur-xl" aria-label="Main navigation">
+    <div class="mx-auto flex max-w-7xl items-center justify-between px-4 py-4 sm:px-6 lg:px-12">
+      <a href="#home" class="focus-ring flex items-center gap-3 rounded-lg" aria-label="MLR Consulting home">
+        <span class="grid h-10 w-10 place-items-center rounded-xl bg-slate-950 text-sm font-bold tracking-tight text-white">MLR</span>
+        <span class="text-base font-semibold tracking-tight text-slate-950">MLR Consulting</span>
+      </a>
+
+      <div class="hidden items-center gap-7 md:flex">
+        <a href="#services" class="focus-ring rounded text-sm font-medium text-slate-600 hover:text-blue-700">Services</a>
+        <a href="#approach" class="focus-ring rounded text-sm font-medium text-slate-600 hover:text-blue-700">Approach</a>
+        <a href="#about" class="focus-ring rounded text-sm font-medium text-slate-600 hover:text-blue-700">About</a>
+        <a href="#contact" class="focus-ring rounded-xl bg-slate-950 px-5 py-2.5 text-sm font-semibold text-white transition hover:bg-blue-700">Contact</a>
+      </div>
+
+      <button id="menuButton" class="focus-ring rounded-lg border border-slate-200 p-2.5 text-slate-800 md:hidden" type="button" aria-label="Open navigation menu" aria-controls="mobileMenu" aria-expanded="false">
+        <svg class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+          <path d="M4 7h16M4 12h16M4 17h16"/>
+        </svg>
+      </button>
+    </div>
+    <div id="mobileMenu" class="hidden border-t border-slate-200 bg-white px-4 py-4 md:hidden">
+      <div class="mx-auto grid max-w-7xl gap-1">
+        <a href="#services" class="mobile-link rounded-lg px-3 py-3 font-medium text-slate-700 hover:bg-slate-50">Services</a>
+        <a href="#approach" class="mobile-link rounded-lg px-3 py-3 font-medium text-slate-700 hover:bg-slate-50">Approach</a>
+        <a href="#about" class="mobile-link rounded-lg px-3 py-3 font-medium text-slate-700 hover:bg-slate-50">About</a>
+        <a href="#contact" class="mobile-link mt-2 rounded-lg bg-blue-600 px-3 py-3 text-center font-semibold text-white">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <!-- ========================================================================== -->
+    <!-- HERO: Concise value proposition and primary calls to action                 -->
+    <!-- ========================================================================== -->
+    <section data-section="hero" id="home" class="relative isolate overflow-hidden bg-[#f8f8f5]">
+      <div class="hero-grid absolute inset-0 -z-10" aria-hidden="true"></div>
+      <div class="absolute -right-28 top-20 -z-10 h-80 w-80 rounded-full bg-blue-200/40 blur-3xl" aria-hidden="true"></div>
+      <div class="mx-auto grid max-w-7xl items-center gap-14 px-4 py-20 sm:px-6 sm:py-28 lg:grid-cols-[1.15fr_.85fr] lg:px-12 lg:py-36">
+        <div>
+          <p class="mb-6 inline-flex items-center gap-2 rounded-full border border-blue-200 bg-white px-4 py-2 text-xs font-semibold uppercase tracking-[.16em] text-blue-700">
+            Digital growth &amp; web consulting
+          </p>
+          <h1 class="max-w-4xl text-4xl font-semibold leading-[1.08] tracking-[-.04em] text-slate-950 sm:text-5xl lg:text-7xl">
+            Build a stronger digital presence—and a clearer path to growth.
+          </h1>
+          <p class="mt-7 max-w-2xl text-lg leading-8 text-slate-600 sm:text-xl">
+            MLR Consulting helps small and mid-sized businesses improve website performance, search visibility, and customer conversion through thoughtful website design, SEO, AEO, and digital strategy.
+          </p>
+          <div class="mt-9 flex flex-col gap-3 sm:flex-row">
+            <a href="#contact" class="focus-ring rounded-xl bg-blue-600 px-6 py-3.5 text-center font-semibold text-white shadow-lg shadow-blue-600/20 transition hover:bg-blue-700">Discuss your project</a>
+            <a href="#services" class="focus-ring rounded-xl border border-slate-300 bg-white px-6 py-3.5 text-center font-semibold text-slate-800 transition hover:border-slate-400 hover:bg-slate-50">Explore services</a>
+          </div>
+        </div>
+
+        <div class="rounded-3xl border border-white/80 bg-white/85 p-5 shadow-[0_30px_80px_rgba(15,23,42,.12)] backdrop-blur sm:p-7" data-aos="fade-left">
+          <div class="rounded-2xl bg-slate-950 p-6 text-white sm:p-8">
+            <p class="text-xs font-semibold uppercase tracking-[.18em] text-blue-300">A connected digital foundation</p>
+            <h2 class="mt-4 text-2xl font-semibold tracking-tight">Strategy, execution, and ongoing improvement.</h2>
+            <div class="mt-7 space-y-4">
+              <div class="flex items-start gap-4 rounded-xl bg-white/5 p-4">
+                <span class="mt-1 h-2.5 w-2.5 shrink-0 rounded-full bg-blue-400"></span>
+                <div><p class="font-semibold">Be easier to find</p><p class="mt-1 text-sm leading-6 text-slate-300">SEO, AEO, and local search visibility aligned with customer intent.</p></div>
+              </div>
+              <div class="flex items-start gap-4 rounded-xl bg-white/5 p-4">
+                <span class="mt-1 h-2.5 w-2.5 shrink-0 rounded-full bg-cyan-300"></span>
+                <div><p class="font-semibold">Be easier to trust</p><p class="mt-1 text-sm leading-6 text-slate-300">Professional websites that communicate value clearly and credibly.</p></div>
+              </div>
+              <div class="flex items-start gap-4 rounded-xl bg-white/5 p-4">
+                <span class="mt-1 h-2.5 w-2.5 shrink-0 rounded-full bg-indigo-300"></span>
+                <div><p class="font-semibold">Be easier to choose</p><p class="mt-1 text-sm leading-6 text-slate-300">Conversion-focused journeys that reduce friction and guide action.</p></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================================== -->
+    <!-- SERVICES: Core consulting and implementation capabilities                   -->
+    <!-- ========================================================================== -->
+    <section data-section="services" id="services" class="bg-white px-4 py-20 sm:px-6 sm:py-28 lg:px-12">
+      <div class="mx-auto max-w-7xl">
+        <div class="max-w-3xl">
+          <p class="text-sm font-semibold uppercase tracking-[.16em] text-blue-700">Our services</p>
+          <h2 class="mt-4 text-3xl font-semibold tracking-[-.03em] text-slate-950 sm:text-5xl">Practical expertise across your digital presence.</h2>
+          <p class="mt-5 text-lg leading-8 text-slate-600">Engagements are shaped around business priorities, current website performance, market context, and the resources available to implement improvements.</p>
+        </div>
+
+        <div class="mt-12 grid gap-5 md:grid-cols-2 lg:grid-cols-4">
+          <article class="service-card rounded-2xl border border-slate-200 bg-white p-6" data-aos="fade-up">
+            <span class="grid h-11 w-11 place-items-center rounded-xl bg-blue-50 font-bold text-blue-700">01</span>
+            <h3 class="mt-5 text-lg font-semibold">Website Design &amp; Development</h3>
+            <p class="mt-3 text-sm leading-6 text-slate-600">Custom, responsive websites structured for clear communication, accessibility, usability, and long-term maintainability.</p>
+          </article>
+          <article class="service-card rounded-2xl border border-slate-200 bg-white p-6" data-aos="fade-up" data-aos-delay="100">
+            <span class="grid h-11 w-11 place-items-center rounded-xl bg-blue-50 font-bold text-blue-700">02</span>
+            <h3 class="mt-5 text-lg font-semibold">Website Redesigns</h3>
+            <p class="mt-3 text-sm leading-6 text-slate-600">Strategic redesigns that modernize presentation, improve navigation, sharpen messaging, and address performance issues.</p>
+          </article>
+          <article class="service-card rounded-2xl border border-slate-200 bg-white p-6" data-aos="fade-up" data-aos-delay="200">
+            <span class="grid h-11 w-11 place-items-center rounded-xl bg-blue-50 font-bold text-blue-700">03</span>
+            <h3 class="mt-5 text-lg font-semibold">SEO &amp; Local SEO</h3>
+            <p class="mt-3 text-sm leading-6 text-slate-600">Search strategy, on-page optimization, technical improvements, and local visibility work grounded in relevant demand.</p>
+          </article>
+          <article class="service-card rounded-2xl border border-slate-200 bg-white p-6" data-aos="fade-up" data-aos-delay="300">
+            <span class="grid h-11 w-11 place-items-center rounded-xl bg-blue-50 font-bold text-blue-700">04</span>
+            <h3 class="mt-5 text-lg font-semibold">AEO for AI Visibility</h3>
+            <p class="mt-3 text-sm leading-6 text-slate-600">Answer Engine Optimization that makes content clearer, more useful, and easier for search and AI systems to interpret.</p>
+          </article>
+          <article class="service-card rounded-2xl border border-slate-200 bg-white p-6" data-aos="fade-up">
+            <span class="grid h-11 w-11 place-items-center rounded-xl bg-blue-50 font-bold text-blue-700">05</span>
+            <h3 class="mt-5 text-lg font-semibold">Conversion Optimization</h3>
+            <p class="mt-3 text-sm leading-6 text-slate-600">Focused improvements to page structure, calls to action, messaging, forms, and customer journeys.</p>
+          </article>
+          <article class="service-card rounded-2xl border border-slate-200 bg-white p-6" data-aos="fade-up" data-aos-delay="100">
+            <span class="grid h-11 w-11 place-items-center rounded-xl bg-blue-50 font-bold text-blue-700">06</span>
+            <h3 class="mt-5 text-lg font-semibold">Technical Audits</h3>
+            <p class="mt-3 text-sm leading-6 text-slate-600">Structured reviews of site health, mobile usability, indexing, speed, content architecture, and conversion barriers.</p>
+          </article>
+          <article class="service-card rounded-2xl border border-slate-200 bg-white p-6" data-aos="fade-up" data-aos-delay="200">
+            <span class="grid h-11 w-11 place-items-center rounded-xl bg-blue-50 font-bold text-blue-700">07</span>
+            <h3 class="mt-5 text-lg font-semibold">Landing Pages &amp; Analytics</h3>
+            <p class="mt-3 text-sm leading-6 text-slate-600">Focused landing experiences supported by analytics setup, performance reporting, and actionable interpretation.</p>
+          </article>
+          <article class="service-card rounded-2xl border border-slate-200 bg-white p-6" data-aos="fade-up" data-aos-delay="300">
+            <span class="grid h-11 w-11 place-items-center rounded-xl bg-blue-50 font-bold text-blue-700">08</span>
+            <h3 class="mt-5 text-lg font-semibold">Maintenance &amp; Digital Strategy</h3>
+            <p class="mt-3 text-sm leading-6 text-slate-600">Ongoing website support and prioritized digital planning to keep core assets accurate, secure, and effective.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================================== -->
+    <!-- APPROACH: Clear, credible consulting process                                -->
+    <!-- ========================================================================== -->
+    <section data-section="approach" id="approach" class="bg-slate-950 px-4 py-20 text-white sm:px-6 sm:py-28 lg:px-12">
+      <div class="mx-auto max-w-7xl">
+        <div class="grid gap-12 lg:grid-cols-[.8fr_1.2fr] lg:gap-20">
+          <div data-aos="fade-right">
+            <p class="text-sm font-semibold uppercase tracking-[.16em] text-blue-300">How we help</p>
+            <h2 class="mt-4 text-3xl font-semibold tracking-[-.03em] sm:text-5xl">A disciplined path from insight to implementation.</h2>
+            <p class="mt-6 text-lg leading-8 text-slate-300">MLR Consulting keeps the process focused, transparent, and connected to practical business priorities—not trends for their own sake.</p>
+          </div>
+          <div class="space-y-4">
+            <article class="rounded-2xl border border-white/10 bg-white/5 p-6 sm:flex sm:gap-6" data-aos="fade-up">
+              <span class="text-sm font-bold text-blue-300">01 / Assess</span>
+              <div class="mt-3 sm:mt-0"><h3 class="text-xl font-semibold">Understand the current state</h3><p class="mt-2 leading-7 text-slate-300">Review the website, search presence, analytics, market context, audience needs, and known operational constraints.</p></div>
+            </article>
+            <article class="rounded-2xl border border-white/10 bg-white/5 p-6 sm:flex sm:gap-6" data-aos="fade-up" data-aos-delay="100">
+              <span class="text-sm font-bold text-blue-300">02 / Prioritize</span>
+              <div class="mt-3 sm:mt-0"><h3 class="text-xl font-semibold">Define a practical roadmap</h3><p class="mt-2 leading-7 text-slate-300">Identify high-value opportunities, clarify scope, and sequence work based on expected impact, effort, and dependencies.</p></div>
+            </article>
+            <article class="rounded-2xl border border-white/10 bg-white/5 p-6 sm:flex sm:gap-6" data-aos="fade-up" data-aos-delay="200">
+              <span class="text-sm font-bold text-blue-300">03 / Improve</span>
+              <div class="mt-3 sm:mt-0"><h3 class="text-xl font-semibold">Implement with care</h3><p class="mt-2 leading-7 text-slate-300">Execute agreed improvements across design, content, search optimization, technical performance, and conversion pathways.</p></div>
+            </article>
+            <article class="rounded-2xl border border-white/10 bg-white/5 p-6 sm:flex sm:gap-6" data-aos="fade-up" data-aos-delay="300">
+              <span class="text-sm font-bold text-blue-300">04 / Learn</span>
+              <div class="mt-3 sm:mt-0"><h3 class="text-xl font-semibold">Measure and refine</h3><p class="mt-2 leading-7 text-slate-300">Use available performance data to evaluate progress, explain findings, and guide the next round of decisions.</p></div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================================== -->
+    <!-- ABOUT: Company positioning and operating principles                         -->
+    <!-- ========================================================================== -->
+    <section data-section="about" id="about" class="bg-[#f8f8f5] px-4 py-20 sm:px-6 sm:py-28 lg:px-12">
+      <div class="mx-auto grid max-w-7xl gap-12 lg:grid-cols-2 lg:items-center lg:gap-20">
+        <div data-aos="fade-right">
+          <p class="text-sm font-semibold uppercase tracking-[.16em] text-blue-700">About MLR Consulting</p>
+          <h2 class="mt-4 text-3xl font-semibold tracking-[-.03em] text-slate-950 sm:text-5xl">Clear thinking for a more effective digital presence.</h2>
+          <p class="mt-6 text-lg leading-8 text-slate-600">MLR Consulting is a digital growth and web consulting firm serving small and mid-sized businesses. The work combines strategic guidance with hands-on execution across websites, organic visibility, analytics, and customer experience.</p>
+          <p class="mt-5 leading-7 text-slate-600">Recommendations are data-informed, commercially grounded, and designed to be understandable. The objective is to help each business make sound digital decisions, address meaningful gaps, and build systems that support measurable business outcomes over time.</p>
+        </div>
+        <div class="grid gap-4 sm:grid-cols-2" data-aos="fade-left">
+          <div class="rounded-2xl border border-slate-200 bg-white p-6">
+            <h3 class="font-semibold text-slate-950">Practical</h3>
+            <p class="mt-2 text-sm leading-6 text-slate-600">Recommendations account for real budgets, timelines, capabilities, and operating needs.</p>
+          </div>
+          <div class="rounded-2xl border border-slate-200 bg-white p-6">
+            <h3 class="font-semibold text-slate-950">Data-informed</h3>
+            <p class="mt-2 text-sm leading-6 text-slate-600">Available analytics, search data, technical findings, and user behavior guide decisions.</p>
+          </div>
+          <div class="rounded-2xl border border-slate-200 bg-white p-6">
+            <h3 class="font-semibold text-slate-950">Business-focused</h3>
+            <p class="mt-2 text-sm leading-6 text-slate-600">Digital work is connected to customer needs, commercial priorities, and useful outcomes.</p>
+          </div>
+          <div class="rounded-2xl border border-slate-200 bg-white p-6">
+            <h3 class="font-semibold text-slate-950">Transparent</h3>
+            <p class="mt-2 text-sm leading-6 text-slate-600">Scope, rationale, tradeoffs, and next steps are communicated clearly throughout the work.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================================== -->
+    <!-- CONTACT: Project inquiry form; connect this to your preferred form backend   -->
+    <!-- ========================================================================== -->
+    <section data-section="contact" id="contact" class="bg-white px-4 py-20 sm:px-6 sm:py-28 lg:px-12">
+      <div class="mx-auto max-w-7xl">
+        <div class="overflow-hidden rounded-3xl bg-gradient-to-br from-blue-700 to-slate-950 shadow-2xl shadow-slate-900/15" data-aos="fade-up">
+          <div class="grid gap-10 px-5 py-10 sm:px-10 sm:py-14 lg:grid-cols-[.85fr_1.15fr] lg:px-14">
+            <div class="text-white">
+              <p class="text-sm font-semibold uppercase tracking-[.16em] text-blue-200">Start a conversation</p>
+              <h2 class="mt-4 text-3xl font-semibold tracking-[-.03em] sm:text-4xl">Tell us what you want to improve.</h2>
+              <p class="mt-5 leading-7 text-blue-100">Share a brief overview of your website, visibility, or conversion priorities. MLR Consulting can help clarify the challenge and identify an appropriate next step.</p>
+              <ul class="mt-8 space-y-3 text-sm text-blue-50">
+                <li class="flex gap-3"><span aria-hidden="true">✓</span> Website projects and redesigns</li>
+                <li class="flex gap-3"><span aria-hidden="true">✓</span> SEO, AEO, and local visibility</li>
+                <li class="flex gap-3"><span aria-hidden="true">✓</span> Audits, analytics, and strategy</li>
+              </ul>
+            </div>
+
+            <form id="contactForm" class="rounded-2xl bg-white p-5 sm:p-7" novalidate>
+              <div class="grid gap-5 sm:grid-cols-2">
+                <div>
+                  <label for="fullName" class="mb-2 block text-sm font-semibold text-slate-800">Name</label>
+                  <input id="fullName" name="full_name" type="text" autocomplete="name" required class="focus-ring w-full rounded-xl border border-slate-300 px-4 py-3 text-slate-900" placeholder="Your name">
+                </div>
+                <div>
+                  <label for="businessEmail" class="mb-2 block text-sm font-semibold text-slate-800">Business email</label>
+                  <input id="businessEmail" name="email" type="email" autocomplete="email" required class="focus-ring w-full rounded-xl border border-slate-300 px-4 py-3 text-slate-900" placeholder="you@company.com">
+                </div>
+              </div>
+              <div class="mt-5">
+                <label for="service" class="mb-2 block text-sm font-semibold text-slate-800">Area of interest</label>
+                <select id="service" name="service" class="focus-ring w-full rounded-xl border border-slate-300 bg-white px-4 py-3 text-slate-900">
+                  <option>Website design or redesign</option>
+                  <option>SEO, AEO, or local SEO</option>
+                  <option>Conversion optimization</option>
+                  <option>Technical audit or analytics</option>
+                  <option>Maintenance or digital strategy</option>
+                  <option>Not sure yet</option>
+                </select>
+              </div>
+              <div class="mt-5">
+                <label for="projectDetails" class="mb-2 block text-sm font-semibold text-slate-800">Project overview</label>
+                <textarea id="projectDetails" name="message" rows="4" required class="focus-ring w-full resize-y rounded-xl border border-slate-300 px-4 py-3 text-slate-900" placeholder="What would you like to improve?"></textarea>
+              </div>
+              <button type="submit" class="focus-ring mt-5 w-full rounded-xl bg-blue-600 px-6 py-3.5 font-semibold text-white transition hover:bg-blue-700">Request a consultation</button>
+              <p id="formStatus" class="mt-3 hidden text-sm font-medium text-slate-700" role="status" aria-live="polite"></p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============================================================================ -->
+  <!-- FOOTER: Legal notice and same-page navigation                                 -->
+  <!-- ============================================================================ -->
+  <footer data-section="footer" class="border-t border-slate-200 bg-[#f8f8f5] px-4 py-8 sm:px-6 lg:px-12">
+    <div class="mx-auto flex max-w-7xl flex-col gap-5 sm:flex-row sm:items-center sm:justify-between">
+      <p class="text-sm text-slate-600">© 2026 MLR Consulting. All rights reserved.</p>
+      <div class="flex flex-wrap gap-x-5 gap-y-2 text-sm font-medium text-slate-600">
+        <a href="#services" class="hover:text-blue-700">Services</a>
+        <a href="#approach" class="hover:text-blue-700">Approach</a>
+        <a href="#about" class="hover:text-blue-700">About</a>
+        <a href="#contact" class="hover:text-blue-700">Contact</a>
+      </div>
+    </div>
+  </footer>
+
+  
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+  
+  <script src="script.js"></script>
+</body>
+</html>
