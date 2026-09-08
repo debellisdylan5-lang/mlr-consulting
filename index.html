@@ -1,10 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<!-- BASE:START (managed by Coding Agent — do not edit) -->
-<base href="/mlr-consulting/">
-<!-- BASE:END -->
-
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
@@ -315,15 +311,12 @@
 })();
 </script>  <link rel="stylesheet" href="styles.css">
 </head>
-<body class="overflow-x-hidden antialiased">
+<body class="overflow-x-hidden antialiased text-slate-900">
 
-  <!-- ============================================================================ -->
-  <!-- NAVBAR: Brand identity and same-page navigation                               -->
-  <!-- ============================================================================ -->
-  <nav data-section="navbar" class="sticky top-0 z-50 border-b border-slate-200/80 bg-white/90 backdrop-blur-xl" aria-label="Main navigation">
+  <nav data-section="navbar" class="sticky top-0 z-50 border-b border-slate-200/70 bg-white/85 backdrop-blur-xl" aria-label="Main navigation">
     <div class="mx-auto flex max-w-7xl items-center justify-between px-4 py-4 sm:px-6 lg:px-12">
       <a href="#home" class="focus-ring flex items-center gap-3 rounded-lg" aria-label="MLR Consulting home">
-        <span class="grid h-10 w-10 place-items-center rounded-xl bg-slate-950 text-sm font-bold tracking-tight text-white">MLR</span>
+        <span class="grid h-10 w-10 place-items-center rounded-xl bg-slate-950 text-sm font-bold tracking-tight text-white shadow-lg shadow-slate-950/20">MLR</span>
         <span class="text-base font-semibold tracking-tight text-slate-950">MLR Consulting</span>
       </a>
 
@@ -351,45 +344,137 @@
   </nav>
 
   <main>
-    <!-- ========================================================================== -->
-    <!-- HERO: Concise value proposition and primary calls to action                 -->
-    <!-- ========================================================================== -->
-    <section data-section="hero" id="home" class="relative isolate overflow-hidden bg-[#f8f8f5]">
-      <div class="hero-grid absolute inset-0 -z-10" aria-hidden="true"></div>
-      <div class="absolute -right-28 top-20 -z-10 h-80 w-80 rounded-full bg-blue-200/40 blur-3xl" aria-hidden="true"></div>
-      <div class="mx-auto grid max-w-7xl items-center gap-14 px-4 py-20 sm:px-6 sm:py-28 lg:grid-cols-[1.15fr_.85fr] lg:px-12 lg:py-36">
-        <div>
-          <p class="mb-6 inline-flex items-center gap-2 rounded-full border border-blue-200 bg-white px-4 py-2 text-xs font-semibold uppercase tracking-[.16em] text-blue-700">
+    <section data-section="hero" id="home" class="section-shell overflow-hidden bg-[linear-gradient(180deg,#071225_0%,#0b1830_100%)] text-white">
+      <div class="absolute inset-0 opacity-40" aria-hidden="true">
+        <div class="grid-line absolute inset-0"></div>
+      </div>
+      <div class="hero-orb absolute -left-24 top-20 h-72 w-72 rounded-full bg-blue-500/30" aria-hidden="true"></div>
+      <div class="hero-orb absolute right-[-5rem] top-10 h-96 w-96 rounded-full bg-cyan-400/20" aria-hidden="true"></div>
+      <div class="mx-auto grid max-w-7xl gap-12 px-4 py-16 sm:px-6 sm:py-20 lg:grid-cols-[1.05fr_.95fr] lg:items-center lg:px-12 lg:py-24">
+        <div class="relative z-10">
+          <p class="section-number mb-5 inline-flex items-center gap-2 rounded-full border border-white/15 bg-white/8 px-4 py-2 text-xs font-semibold uppercase tracking-[.18em] text-blue-200">
             Digital growth &amp; web consulting
           </p>
-          <h1 class="max-w-4xl text-4xl font-semibold leading-[1.08] tracking-[-.04em] text-slate-950 sm:text-5xl lg:text-7xl">
-            Build a stronger digital presence—and a clearer path to growth.
+          <h1 class="max-w-4xl text-4xl font-semibold leading-[1.04] tracking-[-.05em] text-white sm:text-5xl lg:text-7xl">
+            Build a stronger digital presence with a clearer path to growth.
           </h1>
-          <p class="mt-7 max-w-2xl text-lg leading-8 text-slate-600 sm:text-xl">
-            MLR Consulting helps small and mid-sized businesses improve website performance, search visibility, and customer conversion through thoughtful website design, SEO, AEO, and digital strategy.
+          <p class="mt-6 max-w-2xl text-base leading-8 text-slate-300 sm:text-lg">
+            MLR Consulting helps small and mid-sized businesses improve websites, search visibility, and conversion through practical design, SEO, AEO, analytics, and strategy.
           </p>
-          <div class="mt-9 flex flex-col gap-3 sm:flex-row">
-            <a href="#contact" class="focus-ring rounded-xl bg-blue-600 px-6 py-3.5 text-center font-semibold text-white shadow-lg shadow-blue-600/20 transition hover:bg-blue-700">Discuss your project</a>
-            <a href="#services" class="focus-ring rounded-xl border border-slate-300 bg-white px-6 py-3.5 text-center font-semibold text-slate-800 transition hover:border-slate-400 hover:bg-slate-50">Explore services</a>
+
+          <div class="mt-8 flex flex-wrap gap-3">
+            <span class="tiny-chip rounded-full px-4 py-2 text-sm text-slate-100">Website Design</span>
+            <span class="tiny-chip rounded-full px-4 py-2 text-sm text-slate-100">SEO</span>
+            <span class="tiny-chip rounded-full px-4 py-2 text-sm text-slate-100">AEO</span>
+            <span class="tiny-chip rounded-full px-4 py-2 text-sm text-slate-100">Conversion</span>
+            <span class="tiny-chip rounded-full px-4 py-2 text-sm text-slate-100">Analytics</span>
+          </div>
+
+          <div class="mt-10 flex flex-col gap-3 sm:flex-row">
+            <a href="#contact" class="focus-ring rounded-xl bg-blue-500 px-6 py-3.5 text-center font-semibold text-white shadow-lg shadow-blue-600/25 transition hover:bg-blue-400">Discuss your project</a>
+            <a href="#services" class="focus-ring rounded-xl border border-white/15 bg-white/5 px-6 py-3.5 text-center font-semibold text-white transition hover:bg-white/10">Explore services</a>
           </div>
         </div>
 
-        <div class="rounded-3xl border border-white/80 bg-white/85 p-5 shadow-[0_30px_80px_rgba(15,23,42,.12)] backdrop-blur sm:p-7" data-aos="fade-left">
-          <div class="rounded-2xl bg-slate-950 p-6 text-white sm:p-8">
-            <p class="text-xs font-semibold uppercase tracking-[.18em] text-blue-300">A connected digital foundation</p>
-            <h2 class="mt-4 text-2xl font-semibold tracking-tight">Strategy, execution, and ongoing improvement.</h2>
-            <div class="mt-7 space-y-4">
-              <div class="flex items-start gap-4 rounded-xl bg-white/5 p-4">
-                <span class="mt-1 h-2.5 w-2.5 shrink-0 rounded-full bg-blue-400"></span>
-                <div><p class="font-semibold">Be easier to find</p><p class="mt-1 text-sm leading-6 text-slate-300">SEO, AEO, and local search visibility aligned with customer intent.</p></div>
+        <div class="relative">
+          <div class="hero-panel overflow-hidden rounded-[2rem] p-4 sm:p-6">
+            <div class="rounded-[1.75rem] border border-white/10 bg-white/5 p-4 sm:p-5">
+              <div class="flex items-center justify-between border-b border-white/10 pb-4">
+                <div>
+                  <p class="text-xs font-semibold uppercase tracking-[.18em] text-blue-200">A connected digital foundation</p>
+                  <h2 class="mt-2 text-xl font-semibold tracking-tight text-white sm:text-2xl">Strategy, execution, and ongoing improvement</h2>
+                </div>
+                <div class="flex gap-2">
+                  <span class="h-3 w-3 rounded-full bg-red-400/90"></span>
+                  <span class="h-3 w-3 rounded-full bg-yellow-300/90"></span>
+                  <span class="h-3 w-3 rounded-full bg-green-400/90"></span>
+                </div>
               </div>
-              <div class="flex items-start gap-4 rounded-xl bg-white/5 p-4">
-                <span class="mt-1 h-2.5 w-2.5 shrink-0 rounded-full bg-cyan-300"></span>
-                <div><p class="font-semibold">Be easier to trust</p><p class="mt-1 text-sm leading-6 text-slate-300">Professional websites that communicate value clearly and credibly.</p></div>
+
+              <div class="mt-5 grid gap-4 lg:grid-cols-[1fr_.9fr]">
+                <div class="rounded-2xl border border-white/10 bg-slate-950/70 p-4">
+                  <div class="flex items-center justify-between">
+                    <p class="text-sm font-medium text-slate-200">Digital pulse</p>
+                    <span class="rounded-full bg-cyan-400/15 px-2.5 py-1 text-xs font-semibold text-cyan-200">Live</span>
+                  </div>
+                  <div class="mt-4 space-y-3">
+                    <div class="rounded-xl bg-white/5 p-3">
+                      <div class="flex items-center justify-between text-sm">
+                        <span class="text-slate-300">Website clarity</span><span class="text-blue-200">Strong</span>
+                      </div>
+                      <div class="mt-2 h-2 rounded-full bg-white/10">
+                        <div class="h-2 w-[82%] rounded-full bg-gradient-to-r from-blue-500 to-cyan-400"></div>
+                      </div>
+                    </div>
+                    <div class="rounded-xl bg-white/5 p-3">
+                      <div class="flex items-center justify-between text-sm">
+                        <span class="text-slate-300">Search visibility</span><span class="text-blue-200">Rising</span>
+                      </div>
+                      <div class="mt-2 h-2 rounded-full bg-white/10">
+                        <div class="h-2 w-[68%] rounded-full bg-gradient-to-r from-indigo-500 to-blue-400"></div>
+                      </div>
+                    </div>
+                    <div class="rounded-xl bg-white/5 p-3">
+                      <div class="flex items-center justify-between text-sm">
+                        <span class="text-slate-300">Conversion friction</span><span class="text-blue-200">Reducing</span>
+                      </div>
+                      <div class="mt-2 h-2 rounded-full bg-white/10">
+                        <div class="h-2 w-[74%] rounded-full bg-gradient-to-r from-cyan-400 to-blue-500"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="grid gap-4">
+                  <div class="rounded-2xl border border-white/10 bg-gradient-to-br from-white/10 to-white/5 p-4">
+                    <p class="text-xs font-semibold uppercase tracking-[.16em] text-blue-200">Capabilities</p>
+                    <div class="mt-3 grid grid-cols-2 gap-3 text-sm">
+                      <div class="rounded-xl bg-white/5 p-3">
+                        <p class="text-slate-200">Website Design</p>
+                        <p class="mt-1 text-slate-400">Clarity-led UX</p>
+                      </div>
+                      <div class="rounded-xl bg-white/5 p-3">
+                        <p class="text-slate-200">SEO &amp; Local SEO</p>
+                        <p class="mt-1 text-slate-400">Intent alignment</p>
+                      </div>
+                      <div class="rounded-xl bg-white/5 p-3">
+                        <p class="text-slate-200">AEO</p>
+                        <p class="mt-1 text-slate-400">Answer-ready content</p>
+                      </div>
+                      <div class="rounded-xl bg-white/5 p-3">
+                        <p class="text-slate-200">Analytics</p>
+                        <p class="mt-1 text-slate-400">Actionable insight</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="rounded-2xl border border-white/10 bg-slate-950/55 p-4">
+                    <div class="flex items-center justify-between">
+                      <span class="text-sm font-medium text-slate-200">Digital system</span>
+                      <span class="text-xs text-slate-400">Design → Search → Convert</span>
+                    </div>
+                    <div class="mt-4 grid grid-cols-3 gap-2">
+                      <div class="rounded-2xl bg-gradient-to-br from-blue-500/90 to-blue-700/90 p-3 text-center text-xs font-semibold text-white">Design</div>
+                      <div class="rounded-2xl bg-gradient-to-br from-indigo-500/80 to-slate-700/90 p-3 text-center text-xs font-semibold text-white">SEO / AEO</div>
+                      <div class="rounded-2xl bg-gradient-to-br from-cyan-400/80 to-blue-500/90 p-3 text-center text-xs font-semibold text-slate-950">Convert</div>
+                    </div>
+                  </div>
+                </div>
               </div>
-              <div class="flex items-start gap-4 rounded-xl bg-white/5 p-4">
-                <span class="mt-1 h-2.5 w-2.5 shrink-0 rounded-full bg-indigo-300"></span>
-                <div><p class="font-semibold">Be easier to choose</p><p class="mt-1 text-sm leading-6 text-slate-300">Conversion-focused journeys that reduce friction and guide action.</p></div>
+
+              <div class="mt-5 grid gap-3 sm:grid-cols-3">
+                <div class="rounded-2xl border border-white/10 bg-white/5 p-3">
+                  <p class="text-xs uppercase tracking-[.16em] text-slate-400">Focus</p>
+                  <p class="mt-1 text-sm text-white">Helpful structure</p>
+                </div>
+                <div class="rounded-2xl border border-white/10 bg-white/5 p-3">
+                  <p class="text-xs uppercase tracking-[.16em] text-slate-400">Tone</p>
+                  <p class="mt-1 text-sm text-white">Modern + credible</p>
+                </div>
+                <div class="rounded-2xl border border-white/10 bg-white/5 p-3">
+                  <p class="text-xs uppercase tracking-[.16em] text-slate-400">Outcome</p>
+                  <p class="mt-1 text-sm text-white">Clearer growth path</p>
+                </div>
               </div>
             </div>
           </div>
@@ -397,146 +482,212 @@
       </div>
     </section>
 
-    <!-- ========================================================================== -->
-    <!-- SERVICES: Core consulting and implementation capabilities                   -->
-    <!-- ========================================================================== -->
-    <section data-section="services" id="services" class="bg-white px-4 py-20 sm:px-6 sm:py-28 lg:px-12">
+    <section data-section="services" id="services" class="section-shell px-4 py-16 sm:px-6 sm:py-20 lg:px-12">
       <div class="mx-auto max-w-7xl">
         <div class="max-w-3xl">
-          <p class="text-sm font-semibold uppercase tracking-[.16em] text-blue-700">Our services</p>
-          <h2 class="mt-4 text-3xl font-semibold tracking-[-.03em] text-slate-950 sm:text-5xl">Practical expertise across your digital presence.</h2>
-          <p class="mt-5 text-lg leading-8 text-slate-600">Engagements are shaped around business priorities, current website performance, market context, and the resources available to implement improvements.</p>
+          <p class="section-number text-sm font-semibold uppercase tracking-[.18em] text-blue-700">02 / Services</p>
+          <h2 class="mt-4 text-3xl font-semibold tracking-[-.04em] text-slate-950 sm:text-5xl">Practical expertise across your digital presence.</h2>
+          <p class="mt-5 max-w-2xl text-lg leading-8 text-slate-600">Engagements are shaped around business priorities, current website performance, market context, and the resources available to implement improvements.</p>
         </div>
 
-        <div class="mt-12 grid gap-5 md:grid-cols-2 lg:grid-cols-4">
-          <article class="service-card rounded-2xl border border-slate-200 bg-white p-6" data-aos="fade-up">
-            <span class="grid h-11 w-11 place-items-center rounded-xl bg-blue-50 font-bold text-blue-700">01</span>
-            <h3 class="mt-5 text-lg font-semibold">Website Design &amp; Development</h3>
+        <div class="mt-10 grid gap-5 md:grid-cols-2 lg:grid-cols-4">
+          <article class="service-card rounded-[1.5rem] border border-slate-200 bg-white p-6 shadow-sm">
+            <div class="flex items-start justify-between">
+              <span class="grid h-11 w-11 place-items-center rounded-2xl bg-gradient-to-br from-blue-50 to-cyan-50 font-bold text-blue-700">01</span>
+              <span class="text-xs font-semibold uppercase tracking-[.16em] text-slate-400">Build</span>
+            </div>
+            <h3 class="mt-6 text-lg font-semibold text-slate-950">Website Design &amp; Development</h3>
             <p class="mt-3 text-sm leading-6 text-slate-600">Custom, responsive websites structured for clear communication, accessibility, usability, and long-term maintainability.</p>
           </article>
-          <article class="service-card rounded-2xl border border-slate-200 bg-white p-6" data-aos="fade-up" data-aos-delay="100">
-            <span class="grid h-11 w-11 place-items-center rounded-xl bg-blue-50 font-bold text-blue-700">02</span>
-            <h3 class="mt-5 text-lg font-semibold">Website Redesigns</h3>
-            <p class="mt-3 text-sm leading-6 text-slate-600">Strategic redesigns that modernize presentation, improve navigation, sharpen messaging, and address performance issues.</p>
+
+          <article class="service-card rounded-[1.5rem] border border-slate-200 bg-gradient-to-br from-slate-950 to-slate-900 p-6 text-white shadow-sm">
+            <div class="flex items-start justify-between">
+              <span class="grid h-11 w-11 place-items-center rounded-2xl bg-white/10 font-bold text-cyan-200">02</span>
+              <span class="text-xs font-semibold uppercase tracking-[.16em] text-blue-200">Refresh</span>
+            </div>
+            <h3 class="mt-6 text-lg font-semibold">Website Redesigns</h3>
+            <p class="mt-3 text-sm leading-6 text-slate-300">Strategic redesigns that modernize presentation, improve navigation, sharpen messaging, and address performance issues.</p>
           </article>
-          <article class="service-card rounded-2xl border border-slate-200 bg-white p-6" data-aos="fade-up" data-aos-delay="200">
-            <span class="grid h-11 w-11 place-items-center rounded-xl bg-blue-50 font-bold text-blue-700">03</span>
-            <h3 class="mt-5 text-lg font-semibold">SEO &amp; Local SEO</h3>
+
+          <article class="service-card rounded-[1.5rem] border border-slate-200 bg-white p-6 shadow-sm">
+            <div class="flex items-start justify-between">
+              <span class="grid h-11 w-11 place-items-center rounded-2xl bg-gradient-to-br from-indigo-50 to-blue-50 font-bold text-indigo-700">03</span>
+              <span class="text-xs font-semibold uppercase tracking-[.16em] text-slate-400">Search</span>
+            </div>
+            <h3 class="mt-6 text-lg font-semibold text-slate-950">SEO &amp; Local SEO</h3>
             <p class="mt-3 text-sm leading-6 text-slate-600">Search strategy, on-page optimization, technical improvements, and local visibility work grounded in relevant demand.</p>
           </article>
-          <article class="service-card rounded-2xl border border-slate-200 bg-white p-6" data-aos="fade-up" data-aos-delay="300">
-            <span class="grid h-11 w-11 place-items-center rounded-xl bg-blue-50 font-bold text-blue-700">04</span>
-            <h3 class="mt-5 text-lg font-semibold">AEO for AI Visibility</h3>
-            <p class="mt-3 text-sm leading-6 text-slate-600">Answer Engine Optimization that makes content clearer, more useful, and easier for search and AI systems to interpret.</p>
+
+          <article class="service-card rounded-[1.5rem] border border-slate-200 bg-gradient-to-br from-blue-600 to-cyan-500 p-6 text-white shadow-sm">
+            <div class="flex items-start justify-between">
+              <span class="grid h-11 w-11 place-items-center rounded-2xl bg-white/15 font-bold text-white">04</span>
+              <span class="text-xs font-semibold uppercase tracking-[.16em] text-white/90">AEO</span>
+            </div>
+            <h3 class="mt-6 text-lg font-semibold">AEO for AI Visibility</h3>
+            <p class="mt-3 text-sm leading-6 text-blue-50">Answer Engine Optimization that makes content clearer, more useful, and easier for search and AI systems to interpret.</p>
           </article>
-          <article class="service-card rounded-2xl border border-slate-200 bg-white p-6" data-aos="fade-up">
-            <span class="grid h-11 w-11 place-items-center rounded-xl bg-blue-50 font-bold text-blue-700">05</span>
-            <h3 class="mt-5 text-lg font-semibold">Conversion Optimization</h3>
+
+          <article class="service-card rounded-[1.5rem] border border-slate-200 bg-white p-6 shadow-sm">
+            <div class="flex items-start justify-between">
+              <span class="grid h-11 w-11 place-items-center rounded-2xl bg-gradient-to-br from-cyan-50 to-blue-50 font-bold text-cyan-700">05</span>
+              <span class="text-xs font-semibold uppercase tracking-[.16em] text-slate-400">Convert</span>
+            </div>
+            <h3 class="mt-6 text-lg font-semibold text-slate-950">Conversion Optimization</h3>
             <p class="mt-3 text-sm leading-6 text-slate-600">Focused improvements to page structure, calls to action, messaging, forms, and customer journeys.</p>
           </article>
-          <article class="service-card rounded-2xl border border-slate-200 bg-white p-6" data-aos="fade-up" data-aos-delay="100">
-            <span class="grid h-11 w-11 place-items-center rounded-xl bg-blue-50 font-bold text-blue-700">06</span>
-            <h3 class="mt-5 text-lg font-semibold">Technical Audits</h3>
-            <p class="mt-3 text-sm leading-6 text-slate-600">Structured reviews of site health, mobile usability, indexing, speed, content architecture, and conversion barriers.</p>
+
+          <article class="service-card rounded-[1.5rem] border border-slate-200 bg-slate-950 p-6 text-white shadow-sm">
+            <div class="flex items-start justify-between">
+              <span class="grid h-11 w-11 place-items-center rounded-2xl bg-white/10 font-bold text-blue-200">06</span>
+              <span class="text-xs font-semibold uppercase tracking-[.16em] text-slate-400">Audit</span>
+            </div>
+            <h3 class="mt-6 text-lg font-semibold">Technical Audits</h3>
+            <p class="mt-3 text-sm leading-6 text-slate-300">Structured reviews of site health, mobile usability, indexing, speed, content architecture, and conversion barriers.</p>
           </article>
-          <article class="service-card rounded-2xl border border-slate-200 bg-white p-6" data-aos="fade-up" data-aos-delay="200">
-            <span class="grid h-11 w-11 place-items-center rounded-xl bg-blue-50 font-bold text-blue-700">07</span>
-            <h3 class="mt-5 text-lg font-semibold">Landing Pages &amp; Analytics</h3>
+
+          <article class="service-card rounded-[1.5rem] border border-slate-200 bg-white p-6 shadow-sm">
+            <div class="flex items-start justify-between">
+              <span class="grid h-11 w-11 place-items-center rounded-2xl bg-gradient-to-br from-blue-50 to-indigo-50 font-bold text-blue-700">07</span>
+              <span class="text-xs font-semibold uppercase tracking-[.16em] text-slate-400">Measure</span>
+            </div>
+            <h3 class="mt-6 text-lg font-semibold text-slate-950">Landing Pages &amp; Analytics</h3>
             <p class="mt-3 text-sm leading-6 text-slate-600">Focused landing experiences supported by analytics setup, performance reporting, and actionable interpretation.</p>
           </article>
-          <article class="service-card rounded-2xl border border-slate-200 bg-white p-6" data-aos="fade-up" data-aos-delay="300">
-            <span class="grid h-11 w-11 place-items-center rounded-xl bg-blue-50 font-bold text-blue-700">08</span>
-            <h3 class="mt-5 text-lg font-semibold">Maintenance &amp; Digital Strategy</h3>
-            <p class="mt-3 text-sm leading-6 text-slate-600">Ongoing website support and prioritized digital planning to keep core assets accurate, secure, and effective.</p>
+
+          <article class="service-card rounded-[1.5rem] border border-slate-200 bg-gradient-to-br from-slate-950 via-slate-900 to-blue-950 p-6 text-white shadow-sm">
+            <div class="flex items-start justify-between">
+              <span class="grid h-11 w-11 place-items-center rounded-2xl bg-cyan-400/15 font-bold text-cyan-200">08</span>
+              <span class="text-xs font-semibold uppercase tracking-[.16em] text-blue-200">Support</span>
+            </div>
+            <h3 class="mt-6 text-lg font-semibold">Maintenance &amp; Digital Strategy</h3>
+            <p class="mt-3 text-sm leading-6 text-slate-300">Ongoing website support and prioritized digital planning to keep core assets accurate, secure, and effective.</p>
           </article>
         </div>
       </div>
     </section>
 
-    <!-- ========================================================================== -->
-    <!-- APPROACH: Clear, credible consulting process                                -->
-    <!-- ========================================================================== -->
-    <section data-section="approach" id="approach" class="bg-slate-950 px-4 py-20 text-white sm:px-6 sm:py-28 lg:px-12">
+    <section data-section="approach" id="approach" class="section-shell bg-[linear-gradient(180deg,#0b1830_0%,#071225_100%)] px-4 py-16 text-white sm:px-6 sm:py-20 lg:px-12">
+      <div class="absolute inset-0 opacity-30" aria-hidden="true">
+        <div class="grid-line absolute inset-0"></div>
+      </div>
       <div class="mx-auto max-w-7xl">
-        <div class="grid gap-12 lg:grid-cols-[.8fr_1.2fr] lg:gap-20">
-          <div data-aos="fade-right">
-            <p class="text-sm font-semibold uppercase tracking-[.16em] text-blue-300">How we help</p>
-            <h2 class="mt-4 text-3xl font-semibold tracking-[-.03em] sm:text-5xl">A disciplined path from insight to implementation.</h2>
-            <p class="mt-6 text-lg leading-8 text-slate-300">MLR Consulting keeps the process focused, transparent, and connected to practical business priorities—not trends for their own sake.</p>
+        <div class="grid gap-10 lg:grid-cols-[.82fr_1.18fr] lg:gap-16">
+          <div>
+            <p class="section-number text-sm font-semibold uppercase tracking-[.18em] text-blue-300">03 / Approach</p>
+            <h2 class="mt-4 text-3xl font-semibold tracking-[-.04em] sm:text-5xl">A disciplined path from insight to implementation.</h2>
+            <p class="mt-6 max-w-xl text-lg leading-8 text-slate-300">MLR Consulting keeps the process focused, transparent, and connected to practical business priorities—not trends for their own sake.</p>
           </div>
-          <div class="space-y-4">
-            <article class="rounded-2xl border border-white/10 bg-white/5 p-6 sm:flex sm:gap-6" data-aos="fade-up">
-              <span class="text-sm font-bold text-blue-300">01 / Assess</span>
-              <div class="mt-3 sm:mt-0"><h3 class="text-xl font-semibold">Understand the current state</h3><p class="mt-2 leading-7 text-slate-300">Review the website, search presence, analytics, market context, audience needs, and known operational constraints.</p></div>
-            </article>
-            <article class="rounded-2xl border border-white/10 bg-white/5 p-6 sm:flex sm:gap-6" data-aos="fade-up" data-aos-delay="100">
-              <span class="text-sm font-bold text-blue-300">02 / Prioritize</span>
-              <div class="mt-3 sm:mt-0"><h3 class="text-xl font-semibold">Define a practical roadmap</h3><p class="mt-2 leading-7 text-slate-300">Identify high-value opportunities, clarify scope, and sequence work based on expected impact, effort, and dependencies.</p></div>
-            </article>
-            <article class="rounded-2xl border border-white/10 bg-white/5 p-6 sm:flex sm:gap-6" data-aos="fade-up" data-aos-delay="200">
-              <span class="text-sm font-bold text-blue-300">03 / Improve</span>
-              <div class="mt-3 sm:mt-0"><h3 class="text-xl font-semibold">Implement with care</h3><p class="mt-2 leading-7 text-slate-300">Execute agreed improvements across design, content, search optimization, technical performance, and conversion pathways.</p></div>
-            </article>
-            <article class="rounded-2xl border border-white/10 bg-white/5 p-6 sm:flex sm:gap-6" data-aos="fade-up" data-aos-delay="300">
-              <span class="text-sm font-bold text-blue-300">04 / Learn</span>
-              <div class="mt-3 sm:mt-0"><h3 class="text-xl font-semibold">Measure and refine</h3><p class="mt-2 leading-7 text-slate-300">Use available performance data to evaluate progress, explain findings, and guide the next round of decisions.</p></div>
-            </article>
+
+          <div class="relative">
+            <div class="absolute left-[18px] top-4 hidden h-[calc(100%-2rem)] w-px bg-gradient-to-b from-blue-300/80 via-cyan-300/50 to-transparent md:block" aria-hidden="true"></div>
+            <div class="space-y-4">
+              <article class="approach-step relative rounded-[1.5rem] border border-white/10 bg-white/6 p-6 pl-6 md:pl-16">
+                <div class="mb-3 flex items-center gap-3 md:absolute md:left-4 md:top-6 md:mb-0">
+                  <span class="grid h-9 w-9 place-items-center rounded-full bg-blue-500 text-sm font-bold text-white">01</span>
+                  <span class="text-sm font-semibold uppercase tracking-[.16em] text-blue-200">Assess</span>
+                </div>
+                <h3 class="text-xl font-semibold">Understand the current state</h3>
+                <p class="mt-2 max-w-3xl leading-7 text-slate-300">Review the website, search presence, analytics, market context, audience needs, and known operational constraints.</p>
+              </article>
+
+              <article class="approach-step relative rounded-[1.5rem] border border-white/10 bg-white/6 p-6 pl-6 md:pl-16">
+                <div class="mb-3 flex items-center gap-3 md:absolute md:left-4 md:top-6 md:mb-0">
+                  <span class="grid h-9 w-9 place-items-center rounded-full bg-indigo-500 text-sm font-bold text-white">02</span>
+                  <span class="text-sm font-semibold uppercase tracking-[.16em] text-blue-200">Prioritize</span>
+                </div>
+                <h3 class="text-xl font-semibold">Define a practical roadmap</h3>
+                <p class="mt-2 max-w-3xl leading-7 text-slate-300">Identify high-value opportunities, clarify scope, and sequence work based on expected impact, effort, and dependencies.</p>
+              </article>
+
+              <article class="approach-step relative rounded-[1.5rem] border border-white/10 bg-white/6 p-6 pl-6 md:pl-16">
+                <div class="mb-3 flex items-center gap-3 md:absolute md:left-4 md:top-6 md:mb-0">
+                  <span class="grid h-9 w-9 place-items-center rounded-full bg-cyan-400 text-sm font-bold text-slate-950">03</span>
+                  <span class="text-sm font-semibold uppercase tracking-[.16em] text-blue-200">Improve</span>
+                </div>
+                <h3 class="text-xl font-semibold">Implement with care</h3>
+                <p class="mt-2 max-w-3xl leading-7 text-slate-300">Execute agreed improvements across design, content, search optimization, technical performance, and conversion pathways.</p>
+              </article>
+
+              <article class="approach-step relative rounded-[1.5rem] border border-white/10 bg-white/6 p-6 pl-6 md:pl-16">
+                <div class="mb-3 flex items-center gap-3 md:absolute md:left-4 md:top-6 md:mb-0">
+                  <span class="grid h-9 w-9 place-items-center rounded-full bg-white text-sm font-bold text-slate-950">04</span>
+                  <span class="text-sm font-semibold uppercase tracking-[.16em] text-blue-200">Learn</span>
+                </div>
+                <h3 class="text-xl font-semibold">Measure and refine</h3>
+                <p class="mt-2 max-w-3xl leading-7 text-slate-300">Use available performance data to evaluate progress, explain findings, and guide the next round of decisions.</p>
+              </article>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- ========================================================================== -->
-    <!-- ABOUT: Company positioning and operating principles                         -->
-    <!-- ========================================================================== -->
-    <section data-section="about" id="about" class="bg-[#f8f8f5] px-4 py-20 sm:px-6 sm:py-28 lg:px-12">
-      <div class="mx-auto grid max-w-7xl gap-12 lg:grid-cols-2 lg:items-center lg:gap-20">
-        <div data-aos="fade-right">
-          <p class="text-sm font-semibold uppercase tracking-[.16em] text-blue-700">About MLR Consulting</p>
-          <h2 class="mt-4 text-3xl font-semibold tracking-[-.03em] text-slate-950 sm:text-5xl">Clear thinking for a more effective digital presence.</h2>
+    <section data-section="about" id="about" class="section-shell px-4 py-16 sm:px-6 sm:py-20 lg:px-12">
+      <div class="mx-auto grid max-w-7xl gap-8 lg:grid-cols-[1.05fr_.95fr] lg:items-start lg:gap-14">
+        <div class="glass rounded-[2rem] p-6 sm:p-8 lg:p-10">
+          <p class="section-number text-sm font-semibold uppercase tracking-[.18em] text-blue-700">04 / About</p>
+          <h2 class="mt-4 text-3xl font-semibold tracking-[-.04em] text-slate-950 sm:text-5xl">Clear thinking for a more effective digital presence.</h2>
           <p class="mt-6 text-lg leading-8 text-slate-600">MLR Consulting is a digital growth and web consulting firm serving small and mid-sized businesses. The work combines strategic guidance with hands-on execution across websites, organic visibility, analytics, and customer experience.</p>
           <p class="mt-5 leading-7 text-slate-600">Recommendations are data-informed, commercially grounded, and designed to be understandable. The objective is to help each business make sound digital decisions, address meaningful gaps, and build systems that support measurable business outcomes over time.</p>
         </div>
-        <div class="grid gap-4 sm:grid-cols-2" data-aos="fade-left">
-          <div class="rounded-2xl border border-slate-200 bg-white p-6">
-            <h3 class="font-semibold text-slate-950">Practical</h3>
-            <p class="mt-2 text-sm leading-6 text-slate-600">Recommendations account for real budgets, timelines, capabilities, and operating needs.</p>
+
+        <div class="grid gap-4 sm:grid-cols-2">
+          <div class="principle-card rounded-[1.5rem] border border-slate-200 bg-white p-6 shadow-sm">
+            <div class="flex items-center gap-3">
+              <span class="h-3 w-3 rounded-full bg-blue-500"></span>
+              <h3 class="font-semibold text-slate-950">Practical</h3>
+            </div>
+            <p class="mt-3 text-sm leading-6 text-slate-600">Recommendations account for real budgets, timelines, capabilities, and operating needs.</p>
           </div>
-          <div class="rounded-2xl border border-slate-200 bg-white p-6">
-            <h3 class="font-semibold text-slate-950">Data-informed</h3>
-            <p class="mt-2 text-sm leading-6 text-slate-600">Available analytics, search data, technical findings, and user behavior guide decisions.</p>
+          <div class="principle-card rounded-[1.5rem] border border-slate-200 bg-gradient-to-br from-blue-50 to-cyan-50 p-6 shadow-sm">
+            <div class="flex items-center gap-3">
+              <span class="h-3 w-3 rounded-full bg-cyan-500"></span>
+              <h3 class="font-semibold text-slate-950">Data-informed</h3>
+            </div>
+            <p class="mt-3 text-sm leading-6 text-slate-600">Available analytics, search data, technical findings, and user behavior guide decisions.</p>
           </div>
-          <div class="rounded-2xl border border-slate-200 bg-white p-6">
-            <h3 class="font-semibold text-slate-950">Business-focused</h3>
-            <p class="mt-2 text-sm leading-6 text-slate-600">Digital work is connected to customer needs, commercial priorities, and useful outcomes.</p>
+          <div class="principle-card rounded-[1.5rem] border border-slate-200 bg-slate-950 p-6 text-white shadow-sm">
+            <div class="flex items-center gap-3">
+              <span class="h-3 w-3 rounded-full bg-indigo-400"></span>
+              <h3 class="font-semibold">Business-focused</h3>
+            </div>
+            <p class="mt-3 text-sm leading-6 text-slate-300">Digital work is connected to customer needs, commercial priorities, and useful outcomes.</p>
           </div>
-          <div class="rounded-2xl border border-slate-200 bg-white p-6">
-            <h3 class="font-semibold text-slate-950">Transparent</h3>
-            <p class="mt-2 text-sm leading-6 text-slate-600">Scope, rationale, tradeoffs, and next steps are communicated clearly throughout the work.</p>
+          <div class="principle-card rounded-[1.5rem] border border-slate-200 bg-white p-6 shadow-sm">
+            <div class="flex items-center gap-3">
+              <span class="h-3 w-3 rounded-full bg-slate-900"></span>
+              <h3 class="font-semibold text-slate-950">Transparent</h3>
+            </div>
+            <p class="mt-3 text-sm leading-6 text-slate-600">Scope, rationale, tradeoffs, and next steps are communicated clearly throughout the work.</p>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- ========================================================================== -->
-    <!-- CONTACT: Project inquiry form; connect this to your preferred form backend   -->
-    <!-- ========================================================================== -->
-    <section data-section="contact" id="contact" class="bg-white px-4 py-20 sm:px-6 sm:py-28 lg:px-12">
+    <section data-section="contact" id="contact" class="section-shell px-4 py-16 sm:px-6 sm:py-20 lg:px-12">
       <div class="mx-auto max-w-7xl">
-        <div class="overflow-hidden rounded-3xl bg-gradient-to-br from-blue-700 to-slate-950 shadow-2xl shadow-slate-900/15" data-aos="fade-up">
-          <div class="grid gap-10 px-5 py-10 sm:px-10 sm:py-14 lg:grid-cols-[.85fr_1.15fr] lg:px-14">
-            <div class="text-white">
-              <p class="text-sm font-semibold uppercase tracking-[.16em] text-blue-200">Start a conversation</p>
-              <h2 class="mt-4 text-3xl font-semibold tracking-[-.03em] sm:text-4xl">Tell us what you want to improve.</h2>
-              <p class="mt-5 leading-7 text-blue-100">Share a brief overview of your website, visibility, or conversion priorities. MLR Consulting can help clarify the challenge and identify an appropriate next step.</p>
-              <ul class="mt-8 space-y-3 text-sm text-blue-50">
-                <li class="flex gap-3"><span aria-hidden="true">✓</span> Website projects and redesigns</li>
-                <li class="flex gap-3"><span aria-hidden="true">✓</span> SEO, AEO, and local visibility</li>
-                <li class="flex gap-3"><span aria-hidden="true">✓</span> Audits, analytics, and strategy</li>
-              </ul>
+        <div class="overflow-hidden rounded-[2rem] bg-[linear-gradient(135deg,#0b1830_0%,#111f3f_45%,#1d4ed8_100%)] shadow-2xl shadow-slate-900/15">
+          <div class="grid gap-0 lg:grid-cols-[.92fr_1.08fr]">
+            <div class="relative p-6 text-white sm:p-10 lg:p-12">
+              <div class="absolute inset-0 opacity-30" aria-hidden="true">
+                <div class="grid-line absolute inset-0"></div>
+              </div>
+              <div class="relative">
+                <p class="section-number text-sm font-semibold uppercase tracking-[.18em] text-blue-200">05 / Contact</p>
+                <h2 class="mt-4 text-3xl font-semibold tracking-[-.04em] sm:text-4xl">Tell us what you want to improve.</h2>
+                <p class="mt-5 max-w-xl leading-7 text-blue-100">Share a brief overview of your website, visibility, or conversion priorities. MLR Consulting can help clarify the challenge and identify an appropriate next step.</p>
+                <div class="mt-8 rounded-2xl border border-white/10 bg-white/5 p-5">
+                  <p class="text-sm font-semibold uppercase tracking-[.16em] text-blue-200">Best for</p>
+                  <ul class="mt-4 space-y-3 text-sm text-blue-50">
+                    <li class="flex gap-3"><span aria-hidden="true">✓</span> Website projects and redesigns</li>
+                    <li class="flex gap-3"><span aria-hidden="true">✓</span> SEO, AEO, and local visibility</li>
+                    <li class="flex gap-3"><span aria-hidden="true">✓</span> Audits, analytics, and strategy</li>
+                  </ul>
+                </div>
+              </div>
             </div>
 
-            <form id="contactForm" class="rounded-2xl bg-white p-5 sm:p-7" novalidate>
+            <form id="contactForm" class="bg-white p-6 sm:p-8 lg:p-12" novalidate>
               <div class="grid gap-5 sm:grid-cols-2">
                 <div>
                   <label for="fullName" class="mb-2 block text-sm font-semibold text-slate-800">Name</label>
@@ -560,10 +711,11 @@
               </div>
               <div class="mt-5">
                 <label for="projectDetails" class="mb-2 block text-sm font-semibold text-slate-800">Project overview</label>
-                <textarea id="projectDetails" name="message" rows="4" required class="focus-ring w-full resize-y rounded-xl border border-slate-300 px-4 py-3 text-slate-900" placeholder="What would you like to improve?"></textarea>
+                <textarea id="projectDetails" name="message" rows="5" required class="focus-ring w-full resize-y rounded-xl border border-slate-300 px-4 py-3 text-slate-900" placeholder="What would you like to improve?"></textarea>
               </div>
               <button type="submit" class="focus-ring mt-5 w-full rounded-xl bg-blue-600 px-6 py-3.5 font-semibold text-white transition hover:bg-blue-700">Request a consultation</button>
-              <p id="formStatus" class="mt-3 hidden text-sm font-medium text-slate-700" role="status" aria-live="polite"></p>
+              <p class="mt-3 text-sm leading-6 text-slate-600">This form is not yet connected to a backend. We’ll show a neutral confirmation message after submission.</p>
+              <p id="formStatus" class="mt-3 hidden rounded-xl border border-slate-200 bg-slate-50 px-4 py-3 text-sm font-medium text-slate-700" role="status" aria-live="polite"></p>
             </form>
           </div>
         </div>
@@ -571,11 +723,8 @@
     </section>
   </main>
 
-  <!-- ============================================================================ -->
-  <!-- FOOTER: Legal notice and same-page navigation                                 -->
-  <!-- ============================================================================ -->
-  <footer data-section="footer" class="border-t border-slate-200 bg-[#f8f8f5] px-4 py-8 sm:px-6 lg:px-12">
-    <div class="mx-auto flex max-w-7xl flex-col gap-5 sm:flex-row sm:items-center sm:justify-between">
+  <footer data-section="footer" class="border-t border-slate-200 bg-white px-4 py-6 sm:px-6 lg:px-12">
+    <div class="mx-auto flex max-w-7xl flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
       <p class="text-sm text-slate-600">© 2026 MLR Consulting. All rights reserved.</p>
       <div class="flex flex-wrap gap-x-5 gap-y-2 text-sm font-medium text-slate-600">
         <a href="#services" class="hover:text-blue-700">Services</a>
