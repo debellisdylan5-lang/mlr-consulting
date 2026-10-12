@@ -74,26 +74,6 @@ html{scroll-behavior:smooth}
   .human-proof{gap:7px}
   .human-proof strong{font-size:17px}
 }
-</style><style id="typography-audit-system">
-/* Typography audit: retain the confident display style without closing up word shapes or lines. */
-h1{letter-spacing:-.058em;line-height:.93}
-.display{letter-spacing:-.055em;line-height:.95}
-.numbers-teaser h3{letter-spacing:-.052em;line-height:.96}
-.case h3,.ai h2{letter-spacing:-.055em;line-height:.94}
-.story-copy h2{letter-spacing:-.052em;line-height:.95}
-.contact h2{letter-spacing:-.055em;line-height:.94}
-h1 em,.display em,.case h3 em,.ai h2 em,.story-copy h2 em{letter-spacing:-.045em}
-.cap b{letter-spacing:-.02em;line-height:1.16}
-.overlay b{letter-spacing:-.02em;line-height:1.12}
-.system-label b{letter-spacing:-.028em;line-height:1.08}
-.system-body h3{letter-spacing:-.032em;line-height:1.08}
-.human-proof strong{letter-spacing:-.022em;line-height:1.08}
-@media(max-width:780px){
-  h1{letter-spacing:-.052em;line-height:.95}
-  .display{letter-spacing:-.05em;line-height:.98}
-  .case h3,.ai h2,.contact h2{letter-spacing:-.05em;line-height:.97}
-  .story-copy h2{letter-spacing:-.048em;line-height:.98}
-}
 </style>
 <!-- SEO Meta Tags -->
 <title>Dylan DeBellis — Portfolio</title>
@@ -487,4 +467,24 @@ h1 em,.display em,.case h3 em,.ai h2 em,.story-copy h2 em{letter-spacing:-.045em
 </style><style id="polowana-case-study-style">
 .polowana-paths{display:flex;align-items:center;gap:9px;margin-top:26px;color:var(--lime);font:700 .66rem "DM Mono",monospace;letter-spacing:.08em;text-transform:uppercase}.polowana-paths i{color:#8aa1b6;font-style:normal}.polowana-site-stage{position:relative;min-height:520px;padding:24px 34px 25px 8px;overflow:hidden;border-radius:20px;background:radial-gradient(circle at 84% 14%,rgba(213,181,110,.22),transparent 23%),linear-gradient(145deg,#100914,#321b3f 68%,#160b24);box-shadow:inset 0 0 0 1px rgba(229,195,123,.13)}.pk-browser{position:relative;z-index:2;overflow:hidden;border:1px solid rgba(229,195,123,.37);border-radius:11px;background:#160b20;box-shadow:0 24px 46px rgba(0,0,0,.42)}.pk-top{height:29px;display:flex;align-items:center;gap:5px;padding:0 12px;border-bottom:1px solid rgba(229,195,123,.18);color:#c6b9af;font:600 .53rem "DM Mono",monospace}.pk-top span{width:6px;height:6px;border-radius:50%;background:#d5b56e}.pk-top b{margin-left:8px;font-weight:500;opacity:.72}.pk-nav{height:54px;display:flex;align-items:center;justify-content:space-between;gap:9px;padding:0 13px;color:#f7f1e8;font:700 .49rem "DM Mono",monospace;letter-spacing:.08em}.pk-nav small{color:#e5c37b;font-size:.6rem;letter-spacing:.15em}.pk-nav div{opacity:.76;white-space:nowrap}.pk-nav button{border:1px solid #d5b56e;padding:7px 8px;background:#d5b56e;color:#160b20;font:800 .45rem "DM Mono",monospace;letter-spacing:.07em;white-space:nowrap}.pk-hero{position:relative;height:340px;overflow:hidden;background:#231128}.pk-hero:after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(11,5,14,.9) 2%,rgba(11,5,14,.44) 48%,rgba(11,5,14,.08) 100%)}.pk-hero>img{width:100%;height:100%;object-fit:cover;object-position:60% 45%;filter:saturate(.9) contrast(1.02)}.pk-copy{position:absolute;z-index:2;left:8%;top:19%;width:52%;color:#f7f1e8}.pk-copy span{display:block;color:#e5c37b;font:700 .52rem "DM Mono",monospace;letter-spacing:.13em}.pk-copy strong{display:block;margin:13px 0 19px;font:600 clamp(2.05rem,3.8vw,4rem)/.86 Georgia,serif;letter-spacing:-.06em}.pk-copy strong em{color:#e5c37b}.pk-copy b{display:inline-block;border-bottom:1px solid #e5c37b;padding-bottom:6px;color:#f7f1e8;font:700 .53rem "DM Mono",monospace;letter-spacing:.1em}.pk-bottom{display:grid;grid-template-columns:repeat(3,1fr);padding:14px 15px;gap:10px;color:#e5c37b;font:700 .48rem "DM Mono",monospace;letter-spacing:.08em;text-align:center}.pk-bottom span+span{border-left:1px solid rgba(229,195,123,.28)}.pk-plate{position:absolute;z-index:4;right:-8%;bottom:-7%;width:42%;aspect-ratio:1;overflow:hidden;border:5px solid #e5c37b;border-radius:50%;background:#1a0e21;box-shadow:0 20px 32px rgba(0,0,0,.44)}.pk-plate img{width:100%;height:100%;object-fit:cover}@media(max-width:780px){.polowana-site-stage{min-height:440px;padding:16px 21px 18px 5px}.pk-nav div{display:none}.pk-hero{height:290px}.pk-copy{top:17%;width:64%}.pk-copy strong{font-size:2.2rem}.pk-plate{width:39%;right:-5%;bottom:-4%}.pk-bottom{padding:11px 8px;gap:5px;font-size:.42rem}.polowana-paths{font-size:.57rem;gap:6px}}</style><script id="portfolio-motion-script">
 (()=>{const reduce=window.matchMedia&&window.matchMedia("(prefers-reduced-motion: reduce)").matches;document.querySelectorAll('a.cta[href="#numbers"]').forEach(a=>a.classList.add("proof-cta"));if(reduce)return;const selectors=[".split > *",".cap",".numbers-teaser",".head > *",".case > div:first-child",".system-proof",".ai-grid > div",".story-card > div",".contactgrid > div"];const targets=[...new Set(selectors.flatMap(s=>[...document.querySelectorAll(s)]))];targets.forEach((el,i)=>{el.classList.add("motion-reveal");el.style.setProperty("--motion-delay",String((i%4)*70)+"ms")});const inView=el=>{const r=el.getBoundingClientRect();return r.top<innerHeight*.92&&r.bottom>0};targets.filter(inView).forEach(el=>el.classList.add("is-visible"));document.documentElement.classList.add("motion-active");const observer=new IntersectionObserver(entries=>entries.forEach(entry=>{if(entry.isIntersecting){entry.target.classList.add("is-visible");observer.unobserve(entry.target)}}),{threshold:.12,rootMargin:"0px 0px -34px"});targets.filter(el=>!el.classList.contains("is-visible")).forEach(el=>observer.observe(el))})();
-</script></body></html>
+</script><style id="typography-audit-system">
+/* Typography audit: retain the confident display style without closing up word shapes or lines. */
+h1{letter-spacing:-.058em;line-height:.93}
+.display{letter-spacing:-.055em;line-height:.95}
+.numbers-teaser h3{letter-spacing:-.052em;line-height:.96}
+.case h3,.ai h2{letter-spacing:-.055em;line-height:.94}
+.story-copy h2{letter-spacing:-.052em;line-height:.95}
+.contact h2{letter-spacing:-.055em;line-height:.94}
+h1 em,.display em,.case h3 em,.ai h2 em,.story-copy h2 em{letter-spacing:-.045em}
+.cap b{letter-spacing:-.02em;line-height:1.16}
+.overlay b{letter-spacing:-.02em;line-height:1.12}
+.system-label b{letter-spacing:-.028em;line-height:1.08}
+.system-body h3{letter-spacing:-.032em;line-height:1.08}
+.human-proof strong{letter-spacing:-.022em;line-height:1.08}
+@media(max-width:780px){
+  h1{letter-spacing:-.052em;line-height:.95}
+  .display{letter-spacing:-.05em;line-height:.98}
+  .case h3,.ai h2,.contact h2{letter-spacing:-.05em;line-height:.97}
+  .story-copy h2{letter-spacing:-.048em;line-height:.98}
+}
+</style></body></html>
